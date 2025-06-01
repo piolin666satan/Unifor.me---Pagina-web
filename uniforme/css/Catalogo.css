@@ -16,7 +16,7 @@
 /* Estilos generales del body */
 body {
     font-family: 'Poppins', sans-serif;
-    background-image: url(/components/collage.uniforme.png);
+    background-image: url(../../components/collage.uniforme.png);
     color: var(--color-textooscuro);
     margin: 0;
     padding: 0;
