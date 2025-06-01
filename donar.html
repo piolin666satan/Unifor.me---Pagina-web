@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Unifor.me - Donar Uniformes</title>
+  <link rel="stylesheet" href="uniforme/css/donar.css" />
+    <link rel="shortcut icon" href="uniforme/img/logoo.png" type="image/x-icon">
+  <link rel="stylesheet" href="components/navbar.css" />
+  <link rel="stylesheet" href="components/footer.css" />
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600&display=swap" rel="stylesheet" />
+
+<Style>
+    .body {
+        font-family: 'Poppins', sans-serif;
+    }
+</Style>
+</head>
+
+<body class="body">
+  <!-- Fondo borroso -->
+  <div class="background-image"></div>
+
+  <!-- HEADER -->
+  <header class="header">
+    <a href="index (1).html">
+      <img src="uniforme/img/logoo.png" alt="logo" class="logo-img" width="100" />
+    </a>
+
+    <nav class="nav">
+      <a href="index (1).html" class="nav__links">INICIO</a>
+      <a href="Catalogo.html" class="nav__links">CATÁLOGO</a>
+      <a href="donar.html" class="nav__links">DONAR</a>
+      <a href="reparar.html" class="nav__links">REPARAR</a>
+    </nav>
+
+    <div class="search-bar">
+      <input type="text" placeholder="¿Qué estás buscando?" />
+      <button class="search-button">BUSCAR</button>
+    </div>
+  </header>
+
+  <!-- SECCIÓN DONACIÓN -->
+  <section class="donacion">
+    <div class="contenedor-formulario">
+      <h1>Donación de Prendas / Bono UNIFOR.ME</h1>
+      <form>
+        <!-- Usuario -->
+        <fieldset>
+          <legend>Datos del Usuario</legend>
+          <label for="usuario">Tipo de usuario:</label>
+          <select id="usuario" name="usuario" required>
+            <option value="">--Seleccione--</option>
+            <option value="estudiante">Estudiante</option>
+            <option value="acudiente">Acudiente</option>
+          </select>
+        </fieldset>
+
+        <!-- Prenda -->
+        <fieldset>
+          <legend>Información de la Prenda</legend>
+
+          <label for="nombre-prenda">Nombre de la prenda:</label>
+          <input type="text" id="nombre-prenda" name="nombre-prenda" required />
+
+          <label for="estado-prenda">Estado de la prenda:</label>
+          <textarea id="estado-prenda" name="estado-prenda" rows="3" required></textarea>
+
+          <label for="fotos-prenda">Fotos (opcional):</label>
+          <input type="file" id="fotos-prenda" name="fotos-prenda" multiple accept="image/*" />
+
+          <label for="lugar-entrega">Lugar de entrega:</label>
+          <select id="lugar-entrega" name="lugar-entrega" required>
+            <option value="">--Seleccione--</option>
+            <option value="colegio">Colegio</option>
+            <option value="residencia">Residencia</option>
+            <option value="otro">Otro</option>
+          </select>
+
+          <label for="direccion-entrega">Dirección exacta:</label>
+          <input type="text" id="direccion-entrega" name="direccion-entrega" placeholder="Ej. Calle 123 #45-67" />
+        </fieldset>
+
+        <!-- Bono -->
+        <fieldset>
+          <legend>Donación de Bono</legend>
+
+          <label for="bono">Valor del bono:</label>
+          <select id="bono" name="bono">
+            <option value="">--Seleccione--</option>
+            <option value="50000">$50.000</option>
+            <option value="100000">$100.000</option>
+            <option value="150000">$150.000</option>
+          </select>
+
+          <label for="metodo-pago">Método de pago:</label>
+          <select id="metodo-pago" name="metodo-pago">
+            <option value="">--Seleccione--</option>
+            <option value="debito">Tarjeta débito</option>
+            <option value="credito">Tarjeta crédito</option>
+          </select>
+
+          <label for="numero-tarjeta">Número de tarjeta:</label>
+          <input type="text" id="numero-tarjeta" name="numero-tarjeta" placeholder="0000 0000 0000 0000" />
+
+          <label for="codigo-seguridad">Código de seguridad:</label>
+          <input type="password" id="codigo-seguridad" name="codigo-seguridad" placeholder="3 dígitos" />
+        </fieldset>
+
+        <button type="submit" class="btn-donar">Enviar formulario</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="footer__content">
+      
+        <div class="footer__links">
+            <h4>Explora</h4>
+            <ul>
+                <li><a href="index (1).html">Inicio</a></li>
+                <li><a href="#¿Dudas,inquietudes?">Quiénes somos</a></li>
+                <li><a href="catalogo.html">Uniformes</a></li>
+                <li><a href="donar.html">Donaciones</a></li>
+                <li><a href="catalogo.html">Catálogo</a></li>
+                <li><a href="reparar.html">reparaciones</a></li>
+            </ul>
+        </div>
+
+      <div class="footer__brand">
+        <h2 class="footer__logo">
+          <a href="index.html" class="footer__logo-link">unifor.<span>me</span></a>
+        </h2>
+        <p class="footer__slogan">Viste tu esencia. Crea tu personalidad.</p>
+      </div>
+
+      <div class="footer__contact">
+        <h4>Contacto directo</h4>
+        <p><a href="mailto:contacto@uniforme.com">contacto@uniforme.com</a></p>
+        <p><a href="https://wa.me/573001112233" target="_blank">WhatsApp: +57 300 111 2233</a></p>
+        <hr class="footer__divider" />
+        <div class="social-icons">
+          <a href="#"><img src="uniforme/img/logos footer/58e91965eb97430e819064f5.png" alt="Facebook" /></a>
+          <a href="#"><img src="uniforme/img/logos footer/instagram_logo_icon_187313.webp" alt="Instagram" /></a>
+          <a href="#"><img src="uniforme/img/logos footer/5cb78671a7c7755bf004c14b.png" alt="TikTok" class="footer__contact--icon" /></a>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer__bottom">
+      <p>&copy; 2025 unifor.me · Todos los derechos reservados</p>
+      <div class="footer__policies">
+        <a href="#">Política de privacidad</a>
+        <a href="#">Términos y condiciones</a>
+      </div>
+    </div>
+  </footer>
+</body>
+
+</html>
